@@ -3,7 +3,7 @@
 # To re-generate a bundle for another specific version without changing the standard setup, you can:
 # - use the VERSION as arg of the bundle target (e.g make bundle VERSION=0.0.2)
 # - use environment variables to overwrite this value (e.g export VERSION=0.0.2)
-VERSION ?= 0.6.0
+VERSION ?= 0.7.0
 DOCKER_IMAGE_NAME ?= docker.io/kubegreen/kube-green
 OS=$(shell go env GOOS)
 ARCH=$(shell go env GOARCH)
@@ -240,7 +240,7 @@ CONTROLLER_TOOLS_VERSION ?= v0.16.5
 ENVTEST_VERSION ?= release-0.19
 GOTESTSUM_VERSION ?= v1.12.0
 GOLANGCI_LINT_VERSION ?= v1.62.2
-OPERATOR_SDK_VERSION ?= v1.38.0
+OPERATOR_SDK_VERSION ?= v1.39.1
 
 .PHONY: kustomize
 kustomize: $(KUSTOMIZE) ## Download kustomize locally if necessary.
